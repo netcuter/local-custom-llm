@@ -1,61 +1,102 @@
-# SURVIVAL - Źródła do destylacji wiedzy
-# Format: dodaj linki do filmów YouTube, artykułów, stron
+# SURVIVAL & BUSHCRAFT - Źródła do przetworzenia
 
-videos:
-  youtube:
-    # Przykład:
+user_provided:
+  videos:
+    # Dodaj YouTube linki tutaj:
     # - url: "https://www.youtube.com/watch?v=XXXXX"
-    #   title: "Jak rozpalić ogień w deszczu"
-    #   category: "bushcraft"
+    #   title: "Opis filmu"
+    #   category: "bushcraft" / "first_aid" / etc.
 
-    # DODAJ SWOJE LINKI TUTAJ:
+  articles:
+    # Dodaj artykuły/blogi tutaj:
+    # - url: "https://example.com/article"
+    #   title: "Tytuł artykułu"
+    #   category: "survival"
 
-articles:
-  web:
-    # Przykład:
-    # - url: "https://example.com/survival-guide"
-    #   title: "Poradnik survivalu"
+  books:
+    # Dodaj linki do książek/PDF:
+    # - url: "https://example.com/survival-guide.pdf"
+    #   title: "Survival Guide"
     #   category: "general"
 
-    # DODAJ SWOJE LINKI TUTAJ:
 
-topics:
+# Auto-discovered sources
+auto_discovered:
+  youtube_channels:
+    # Top survival channels
+    - channel: "Survival Lilly"
+      category: "survival_skills"
+      max_videos: 15
+
+    - channel: "TA Outdoors"
+      category: "bushcraft"
+      max_videos: 15
+
+    - channel: "MCQBushcraft"
+      category: "bushcraft"
+      max_videos: 10
+
+    - channel: "Coalcracker Bushcraft"
+      category: "bushcraft_skills"
+      max_videos: 10
+
+  websites:
+    - url: "https://www.survivopedia.com/"
+      title: "Survivopedia"
+      category: "general_survival"
+
+    - url: "https://www.artofmanliness.com/skills/outdoor-survival/"
+      title: "Art of Manliness - Survival"
+      category: "survival_skills"
+
+  polish_sources:
+    # Polskie źródła
+    - url: "https://www.survival.org.pl/"
+      title: "Survival.org.pl"
+      category: "polish_survival"
+      note: "Polish survival community"
+
+
+# Topics to focus on
+focus_topics:
   bushcraft:
-    - rozpalanie_ognia
-    - budowanie_schronien
-    - zdobywanie_wody
-    - narzedzia_polowe
-    - wezly_i_liny
+    - fire_making
+    - shelter_building
+    - water_procurement
+    - knots_and_rope
+    - tool_making
+    - foraging
 
-  pierwsza_pomoc:
-    - opatrunki
-    - stabilizacja
-    - cpr_i_ratownictwo
-    - ukaszenia_i_ugryzienia
-    - zlamania_i_zwichniecia
+  first_aid:
+    - wound_care
+    - cpr
+    - fractures
+    - hypothermia
+    - bites_stings
+    - emergency_response
 
-  nawigacja:
-    - czytanie_mapy
-    - kompas
-    - orientacja_w_terenie
-    - nawigacja_nocna
+  navigation:
+    - map_reading
+    - compass_use
     - gps
+    - natural_navigation
+    - night_navigation
 
-  zywnosc_i_woda:
-    - rosliny_jadalne
-    - grzyby
-    - lowienie_ryb
-    - pulapki
-    - oczyszczanie_wody
+  food_water:
+    - edible_plants
+    - mushrooms
+    - fishing
+    - trapping
+    - water_purification
 
-  schronienie:
-    - typy_schronien
-    - izolacja_termiczna
-    - ochrona_przed_pogoda
-    - lokalizacja_obozowiska
+  shelter:
+    - shelter_types
+    - insulation
+    - location_selection
+    - weather_protection
 
-  psychologia:
-    - zarzadzanie_stresem
-    - podejmowanie_decyzji
-    - motywacja
-    - praca_w_grupie
+  psychology:
+    - stress_management
+    - decision_making
+    - group_dynamics
+    - motivation
