@@ -1,26 +1,28 @@
-# Model Information - DeepSeek DeepHat v1 7B
+# Model Information - Granite 4H Tiny MoE
 
 ## Architecture
 
-**DeepSeek DeepHat v1 7B**
-- **Developer**: DeepSeek (mradermacher quantization)
-- **Type**: Transformer-based LLM
+**Granite 4H Tiny** (IBM)
+- **Type**: MoE (Mixture of Experts)
 - **Total Parameters**: 7B
+- **Active Parameters**: ~1B (during inference)
 - **Format**: GGUF (for LM Studio)
-- **Specialization**: Coding, reasoning, security
+- **Specialization**: Code, reasoning, security
 
-## Why DeepSeek DeepHat for Pentesting?
+## Why Granite 4H Tiny for Pentesting?
 
-### Advantages:
-- **Coding focus**: Strong performance on code understanding
-- **Security knowledge**: Good baseline for security concepts
-- **7B size**: Better quality than 4B while still CPU-trainable
-- **Active development**: Recent model (2024-2025)
+### Key Advantages:
+- **⚡ SPEED**: MoE architecture - only 1B active = FAST inference
+- **🧠 QUALITY**: 7B total parameters = good quality responses
+- **💻 CODE FOCUS**: IBM's Granite = excellent for code/security
+- **⚡ FAST TRAINING**: Smaller active params = faster fine-tuning
+- **💾 EFFICIENT**: Lower memory requirements than full 7B
 
 ### Performance:
-- Inference: Medium speed on CPU
-- Quality: High (7B parameter count)
-- Memory efficient with quantization
+- **Inference**: VERY FAST (1B active)
+- **Quality**: HIGH (7B total knowledge)
+- **Training speed**: 2x faster than full 7B
+- **Practical**: Perfect for daily pentesting work
 
 ## Fine-tuning Strategy
 
@@ -33,21 +35,21 @@
 - **Total**: ~12-16GB RAM ✅
 
 **Training Time (CPU - i7 13gen 16 cores):**
-- 500 examples: ~24-36h
-- 1000 examples: ~48-72h
-- 2000 examples: ~96-144h (4-6 days)
+- 500 examples: ~18-24h (MoE advantage!)
+- 1000 examples: ~24-48h
+- 2000 examples: ~48-96h (2-4 days)
 
 ### Configuration:
 ```yaml
-base_model: DeepSeek-DeepHat-v1-7B
+base_model: Granite-4H-Tiny-7B-MoE
 quantization: 4-bit (bitsandbytes)
-lora_r: 8
-lora_alpha: 16
+lora_r: 16  # Higher for MoE
+lora_alpha: 32
 lora_dropout: 0.05
-target_modules: [q_proj, k_proj, v_proj, o_proj]
+target_modules: [q_proj, k_proj, v_proj, o_proj, gate]  # MoE gate
 batch_size: 1
 gradient_accumulation_steps: 4
-learning_rate: 2e-4
+learning_rate: 3e-4  # Slightly higher for MoE
 epochs: 3
 ```
 
@@ -92,7 +94,13 @@ epochs: 3
 
 ---
 
-**Selected**: DeepSeek DeepHat v1 7B
+**Selected**: Granite 4H Tiny MoE (7B total, 1B active)
 **Purpose**: Web Pentesting Specialist
 **Date**: 2025-11-23
 **Status**: Ready for data collection
+
+## Alternative Considered
+
+**DeepSeek DeepHat 7B**: Better quality but significantly slower inference and training. Can be used later if Granite quality is insufficient.
+
+**Decision rationale**: Speed > marginal quality improvement for practical pentesting use.
