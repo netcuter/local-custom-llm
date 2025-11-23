@@ -28,11 +28,11 @@
 
 ### QLoRA (Recommended for 7B on CPU)
 
-**Memory Requirements:**
-- **Model (4-bit)**: 4-5GB
-- **Training overhead**: 6-8GB
+**Memory Requirements (MoE advantage!):**
+- **Model (4-bit)**: 3-4GB (MoE - tylko 1B aktywne!)
+- **Training overhead**: 4-6GB (mniejsze niż full 7B)
 - **System**: 2-3GB
-- **Total**: ~12-16GB RAM ✅
+- **Total**: ~9-13GB RAM ✅ (bezpiecznie < 16GB!)
 
 **Training Time (CPU - i7 13gen 16 cores):**
 - 500 examples: ~18-24h (MoE advantage!)
