@@ -1,0 +1,212 @@
+# PROGRAMMING - Źródła do przetworzenia
+#
+# INSTRUKCJA:
+# 1. Dodaj swoje linki w sekcji user_provided
+# 2. Claude Code automatycznie znajdzie dodatkowe w sekcji auto_discovered
+
+user_provided:
+  videos:
+    # Dodaj YouTube linki tutaj:
+    # - url: "https://www.youtube.com/watch?v=XXXXX"
+    #   title: "Opis filmu"
+    #   category: "python" / "javascript" / "algorithms" / etc.
+
+  articles:
+    # Dodaj artykuły/tutoriale tutaj:
+    # - url: "https://example.com/article"
+    #   title: "Tytuł artykułu"
+    #   category: "coding"
+
+  repositories:
+    # Dodaj GitHub repos z przykładami kodu:
+    # - url: "https://github.com/user/repo"
+    #   title: "Nazwa repo"
+    #   category: "python" / "javascript" / etc.
+
+
+# Auto-discovered sources
+auto_discovered:
+  # === BEST PRACTICES ===
+  best_practices:
+    - url: "https://github.com/promyze/best-coding-practices"
+      title: "Best Coding Practices (Multi-language)"
+      category: "best_practices"
+      priority: "critical"
+      note: "Docker, Git, Python, React, SQL best practices"
+
+    - url: "https://github.com/dereknguyen269/programing-best-practices-in-2024"
+      title: "Programming Best Practices for Beginners"
+      category: "best_practices"
+      priority: "high"
+
+  # === PYTHON ===
+  python:
+    - url: "https://github.com/TheAlgorithms/Python"
+      title: "The Algorithms - Python"
+      category: "algorithms_python"
+      priority: "critical"
+      note: "All algorithms implemented in Python"
+
+    - url: "https://github.com/trekhleb/learn-python"
+      title: "Learn Python - Interactive"
+      category: "python_learning"
+      priority: "high"
+
+    - url: "https://github.com/practical-tutorials/project-based-learning"
+      title: "Project-Based Learning (Python section)"
+      category: "python_projects"
+      priority: "high"
+      note: "Flask, Django, bots, ML projects"
+
+  # === JAVASCRIPT ===
+  javascript:
+    - url: "https://github.com/ryanmcdermott/clean-code-javascript"
+      title: "Clean Code JavaScript"
+      category: "javascript_best_practices"
+      priority: "critical"
+
+    - url: "https://github.com/TheAlgorithms/JavaScript"
+      title: "The Algorithms - JavaScript"
+      category: "algorithms_javascript"
+      priority: "high"
+
+  # === C++ / RUST ===
+  cpp_rust:
+    - url: "https://github.com/TheAlgorithms/C-Plus-Plus"
+      title: "The Algorithms - C++"
+      category: "algorithms_cpp"
+      priority: "high"
+
+    - url: "https://github.com/TheAlgorithms/Rust"
+      title: "The Algorithms - Rust"
+      category: "algorithms_rust"
+      priority: "medium"
+
+  # === DATA STRUCTURES & ALGORITHMS ===
+  algorithms:
+    - url: "https://github.com/topics/coding-practice"
+      title: "GitHub Topics: Coding Practice"
+      category: "practice"
+      priority: "high"
+
+    - url: "https://github.com/topics/programming-practice"
+      title: "GitHub Topics: Programming Practice"
+      category: "practice"
+      priority: "high"
+
+  # === YOUTUBE CHANNELS ===
+  youtube_channels:
+    - channel: "ArjanCodes"
+      category: "python_best_practices"
+      priority: "high"
+      max_videos: 20
+
+    - channel: "Fireship"
+      category: "web_dev_javascript"
+      priority: "high"
+      max_videos: 20
+
+    - channel: "ThePrimeagen"
+      category: "programming_general"
+      priority: "high"
+      max_videos: 15
+
+    - channel: "CodeAesthetic"
+      category: "clean_code"
+      priority: "medium"
+      max_videos: 15
+
+  # === PUBLIC DATASETS ===
+  datasets:
+    - source: "huggingface"
+      dataset: "bigcode/starcoderdata"
+      filter: "python,javascript,cpp,rust"
+      priority: "high"
+      note: "Code examples from GitHub"
+
+    - source: "huggingface"
+      dataset: "codeparrot/github-code"
+      filter: "clean_code"
+      priority: "medium"
+
+
+# Topics to focus on
+focus_topics:
+  python:
+    basics:
+      - data_types
+      - functions
+      - classes_oop
+      - decorators
+      - generators
+
+    advanced:
+      - async_await
+      - context_managers
+      - metaclasses
+      - descriptors
+
+    frameworks:
+      - flask_fastapi
+      - django
+      - pytest
+
+    best_practices:
+      - pep8
+      - type_hints
+      - error_handling
+      - logging
+
+  javascript:
+    basics:
+      - es6_features
+      - promises_async
+      - closures
+      - prototypes
+
+    frameworks:
+      - react
+      - nodejs
+      - express
+
+    best_practices:
+      - clean_code
+      - error_handling
+      - testing_jest
+
+  cpp_rust:
+    cpp:
+      - memory_management
+      - smart_pointers
+      - templates
+      - stl
+
+    rust:
+      - ownership_borrowing
+      - lifetimes
+      - traits
+      - error_handling
+
+  algorithms:
+    - sorting_searching
+    - dynamic_programming
+    - graphs_trees
+    - greedy_algorithms
+    - backtracking
+
+  design_patterns:
+    - creational
+    - structural
+    - behavioral
+
+  testing:
+    - unit_testing
+    - integration_testing
+    - tdd_bdd
+    - mocking
+
+  devops:
+    - git_workflows
+    - ci_cd
+    - docker
+    - debugging

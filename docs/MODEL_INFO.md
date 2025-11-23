@@ -55,7 +55,17 @@ epochs: 3
 
 ## Target Use Case
 
-### Web Pentesting Model:
+### Dual-Purpose: Programming + Pentesting Model
+
+**Programming (50%):**
+- Python, JavaScript, C++, Rust, Go
+- Data structures & algorithms
+- Code review & debugging
+- Best practices & design patterns
+- API development
+- Testing & CI/CD
+
+**Pentesting (50%):**
 - OWASP Top 10 2025 expertise
 - Web vulnerability analysis
 - Burp Suite / security tools knowledge
@@ -76,10 +86,16 @@ epochs: 3
 ## Training Plan
 
 **Phase 1: Data Collection** (Today)
-- Web scraping: CTF writeups, OWASP docs, PortSwigger labs
-- YouTube transcripts: IppSec, John Hammond, etc.
+- **Programming (50%)**:
+  - Best practices repos (Python, JS, C++, Rust)
+  - Algorithm implementations
+  - Clean code examples
+  - YouTube: ArjanCodes, Fireship, ThePrimeagen
+- **Pentesting (50%)**:
+  - CTF writeups, OWASP 2025 docs, PortSwigger labs
+  - YouTube: IppSec, John Hammond, LiveOverflow
 - User-provided links (priority)
-- Target: 1,500-2,500 examples
+- Target: 2,000-3,000 examples total
 
 **Phase 2: Fine-tuning** (Local PC - Tomorrow+)
 - QLoRA fine-tuning
