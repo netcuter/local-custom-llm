@@ -1,0 +1,61 @@
+# SURVIVAL - Źródła do destylacji wiedzy
+# Format: dodaj linki do filmów YouTube, artykułów, stron
+
+videos:
+  youtube:
+    # Przykład:
+    # - url: "https://www.youtube.com/watch?v=XXXXX"
+    #   title: "Jak rozpalić ogień w deszczu"
+    #   category: "bushcraft"
+
+    # DODAJ SWOJE LINKI TUTAJ:
+
+articles:
+  web:
+    # Przykład:
+    # - url: "https://example.com/survival-guide"
+    #   title: "Poradnik survivalu"
+    #   category: "general"
+
+    # DODAJ SWOJE LINKI TUTAJ:
+
+topics:
+  bushcraft:
+    - rozpalanie_ognia
+    - budowanie_schronien
+    - zdobywanie_wody
+    - narzedzia_polowe
+    - wezly_i_liny
+
+  pierwsza_pomoc:
+    - opatrunki
+    - stabilizacja
+    - cpr_i_ratownictwo
+    - ukaszenia_i_ugryzienia
+    - zlamania_i_zwichniecia
+
+  nawigacja:
+    - czytanie_mapy
+    - kompas
+    - orientacja_w_terenie
+    - nawigacja_nocna
+    - gps
+
+  zywnosc_i_woda:
+    - rosliny_jadalne
+    - grzyby
+    - lowienie_ryb
+    - pulapki
+    - oczyszczanie_wody
+
+  schronienie:
+    - typy_schronien
+    - izolacja_termiczna
+    - ochrona_przed_pogoda
+    - lokalizacja_obozowiska
+
+  psychologia:
+    - zarzadzanie_stresem
+    - podejmowanie_decyzji
+    - motywacja
+    - praca_w_grupie

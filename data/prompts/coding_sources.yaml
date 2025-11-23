@@ -1,0 +1,71 @@
+# CODING & HACKING - Źródła do destylacji wiedzy
+
+videos:
+  youtube:
+    # DODAJ SWOJE LINKI TUTAJ:
+
+articles:
+  web:
+    # DODAJ SWOJE LINKI TUTAJ:
+
+topics:
+  programowanie:
+    python:
+      - podstawy_pythona
+      - oop_python
+      - async_await
+      - data_structures
+      - testing_pytest
+
+    javascript:
+      - nodejs_basics
+      - async_programming
+      - frameworks_react_vue
+
+    cpp_rust:
+      - memory_management
+      - performance_optimization
+      - unsafe_rust
+
+  cybersecurity:
+    podstawy:
+      - owasp_top_10
+      - secure_coding
+      - threat_modeling
+      - defense_in_depth
+
+    ethical_hacking:
+      - reconnaissance
+      - enumeration
+      - vulnerability_scanning
+      - exploitation_basics
+      - privilege_escalation
+      - post_exploitation
+
+    narzedzia:
+      - metasploit
+      - burp_suite
+      - nmap_wireshark
+      - ghidra_ida
+      - john_hashcat
+
+  ctf_challenges:
+    - web_exploitation
+    - binary_exploitation
+    - reverse_engineering
+    - cryptography
+    - forensics
+
+  web_security:
+    - xss_attacks
+    - sql_injection
+    - csrf
+    - ssrf
+    - file_upload_vulns
+    - authentication_bypass
+
+  network_security:
+    - packet_analysis
+    - mitm_attacks
+    - wifi_security
+    - vpn_tunneling
