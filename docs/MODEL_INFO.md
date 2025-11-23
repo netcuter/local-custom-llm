@@ -55,24 +55,26 @@ epochs: 3
 
 ## Target Use Case
 
-### Dual-Purpose: Programming + Pentesting Model
+### 100% WEB PENTESTING SPECIALIST
 
-**Programming (50%):**
-- Python, JavaScript, C++, Rust, Go
-- Data structures & algorithms
-- Code review & debugging
-- Best practices & design patterns
-- API development
-- Testing & CI/CD
+**Why pentesting-only:**
+- User already has Qwen2.5-Coder 1.5B for programming
+- Specialization = better quality
+- Focused dataset = faster training
 
-**Pentesting (50%):**
-- OWASP Top 10 2025 expertise
-- Web vulnerability analysis
+**Pentesting Expertise:**
+- OWASP Top 10 2025 (including new categories)
+- Web vulnerability analysis (XSS, SQLi, CSRF, etc.)
 - Burp Suite / security tools knowledge
-- CTF problem-solving
+- CTF problem-solving & writeups
 - Exploit development (ethical/authorized)
-- Report writing
-- Security best practices
+- Report writing & documentation
+- Security best practices & methodology
+- Penetration testing workflow
+
+**Complementary Model:**
+- **Qwen2.5-Coder 1.5B** → Programming, algorithms, clean code
+- **Granite 4H Tiny MoE** → Web pentesting specialist
 
 ## Comparison to Alternatives
 
@@ -86,16 +88,15 @@ epochs: 3
 ## Training Plan
 
 **Phase 1: Data Collection** (Today)
-- **Programming (50%)**:
-  - Best practices repos (Python, JS, C++, Rust)
-  - Algorithm implementations
-  - Clean code examples
-  - YouTube: ArjanCodes, Fireship, ThePrimeagen
-- **Pentesting (50%)**:
-  - CTF writeups, OWASP 2025 docs, PortSwigger labs
-  - YouTube: IppSec, John Hammond, LiveOverflow
-- User-provided links (priority)
-- Target: 2,000-3,000 examples total
+- **100% Pentesting Focus**:
+  - OWASP Top 10 2025 official docs
+  - PortSwigger Web Security Academy (all labs + solutions)
+  - CTF writeups (HTB, TryHackMe, 0xdf)
+  - YouTube: IppSec, John Hammond, LiveOverflow, PwnFunction
+  - Security blogs & research
+  - User-provided links (highest priority)
+- Target: 1,500-2,000 focused examples
+- Quality over quantity
 
 **Phase 2: Fine-tuning** (Local PC - Tomorrow+)
 - QLoRA fine-tuning
