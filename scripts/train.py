@@ -59,14 +59,14 @@ class Config:
     )
 
     # Training settings
-    num_epochs: int = 3
+    num_epochs: int = 2  # Reduced for CPU
     batch_size: int = 1  # Small batch for CPU
-    gradient_accumulation_steps: int = 8  # Effective batch size = 8
+    gradient_accumulation_steps: int = 4  # Effective batch size = 4
     learning_rate: float = 2e-4
-    max_seq_length: int = 2048
-    warmup_steps: int = 100
-    logging_steps: int = 10
-    save_steps: int = 500
+    max_seq_length: int = 1024  # Shorter for CPU speed
+    warmup_steps: int = 50
+    logging_steps: int = 20
+    save_steps: int = 200
 
     # Dataset
     data_file: str = str(DATA_DIR / 'final_dataset.jsonl')
@@ -76,9 +76,9 @@ class Config:
     output_dir: str = str(OUTPUT_DIR)
 
     # Precision (for best quality before Q4_K_M export)
-    use_cpu: bool = False  # Auto-detect GPU/CPU
-    fp16: bool = True  # Use FP16 for GPU (better quality than 4-bit)
-    bf16: bool = False  # BF16 if your GPU supports it
+    use_cpu: bool = True  # CPU training (no GPU)
+    fp16: bool = False  # No FP16 on CPU
+    bf16: bool = False  # CPU uses float32
 
 
 def load_data(config: Config) -> Dataset:
