@@ -18,7 +18,8 @@ This guide explains how to fine-tune a language model on pentesting data using L
 ## Model Architecture
 - **Base model**: IBM Granite 3.0 2B Instruct
 - **Fine-tuning method**: LoRA (Low-Rank Adaptation)
-- **Quantization**: 4-bit (QLoRA) for memory efficiency
+- **Training precision**: FP16/BF16 (full precision LoRA for best quality)
+- **Export format**: GGUF Q4_K_M (quantized once after training)
 
 ## Training Configuration
 
@@ -77,9 +78,12 @@ tensorboard --logdir logs/
 - **GPU (A100)**: 1-2 hours
 
 ## Memory Requirements
-- **With 4-bit quantization**: ~6-8 GB RAM
-- **Without quantization**: ~16 GB RAM
-- **GPU VRAM**: ~8 GB (if using GPU)
+- **GPU VRAM (FP16)**: ~8-10 GB (RTX 3060+, RTX 4070+)
+- **GPU VRAM (BF16)**: ~6-8 GB (if supported)
+- **CPU RAM**: ~16 GB (slower but works)
+
+**Note**: Training in full precision (FP16/BF16) for best quality.
+Quantize to Q4_K_M only once after training using `export_gguf.py`
 
 ## Testing the Model
 

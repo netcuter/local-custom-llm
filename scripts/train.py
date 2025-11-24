@@ -48,7 +48,7 @@ class Config:
 
     # Model settings
     model_name: str = "ibm-granite/granite-3.0-2b-instruct"  # Smaller model for CPU
-    use_4bit: bool = True  # Use 4-bit quantization (QLoRA)
+    use_4bit: bool = False  # DON'T use 4-bit during training (better quality for Q4_K_M export)
 
     # LoRA settings
     lora_r: int = 16  # LoRA rank
@@ -75,10 +75,10 @@ class Config:
     # Output
     output_dir: str = str(OUTPUT_DIR)
 
-    # CPU optimization
-    use_cpu: bool = True  # Force CPU training
-    fp16: bool = False  # No FP16 on CPU
-    bf16: bool = False  # BF16 if supported
+    # Precision (for best quality before Q4_K_M export)
+    use_cpu: bool = False  # Auto-detect GPU/CPU
+    fp16: bool = True  # Use FP16 for GPU (better quality than 4-bit)
+    bf16: bool = False  # BF16 if your GPU supports it
 
 
 def load_data(config: Config) -> Dataset:
