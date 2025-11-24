@@ -1,29 +1,31 @@
-# Focus: Advanced & Latest
+# Focus: Advanced & Latest ✅
 
-Granite ma podstawy. Douczyć:
+## ✅ Dane zebrane (307 przykładów)
 
-## Advanced Techniques
-- WAF bypass (2024-2025)
-- Race conditions
-- Business logic flaws
-- Advanced XSS (CSP bypass, mutation XSS)
-- SQL injection advanced (WAF evasion)
-- Deserialization attacks
-- SSRF chain attacks
+### Praktyczne writeups (176)
+- ✅ 126 HTB writeups (xct.github.io)
+- ✅ 50 HTB writeups (0xdf.gitlab.io)
+- ✅ 20 HTB writeups (różne źródła)
 
-## Latest CVEs (2024-2025)
-- Recent critical CVEs
-- 0-day techniques
-- Modern exploit chains
+### Techniki i payloady (131)
+- ✅ 100 plików PayloadsAllTheThings (zaawansowane payloady)
+- ✅ 9 artykułów PortSwigger (CSRF, XSS, SQLi, XXE, SSRF, itp.)
+- ✅ 2 artykuły OWASP
 
-## New Tools (2024-2025)
-- Nuclei templates (latest)
-- Modern Burp extensions
-- Katana, httpx, subfinder
-- AI-assisted pentesting tools
+### Pokrycie tematów
+✅ SQL Injection (podstawy + zaawansowane)
+✅ XSS (różne typy)
+✅ CSRF
+✅ XXE
+✅ SSRF
+✅ Deserialization
+✅ Command Injection
+✅ Access Control
+✅ Authentication bypass
+✅ PayloadsAllTheThings (kompletna kolekcja)
 
-## Sources
-- Recent CTF writeups (2024-2025)
-- PortSwigger advanced labs
-- HackerOne disclosed reports (2024-2025)
-- Latest security research papers
+## 🎯 Co dalej
+- [ ] Fine-tune model (użyj `python scripts/train.py`)
+- [ ] Test model (`python scripts/inference.py`)
+- [ ] Deploy lokalnie
+- [ ] Dodaj więcej najnowszych danych (2024-2025 CVEs)
