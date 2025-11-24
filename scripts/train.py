@@ -47,7 +47,7 @@ class Config:
     """Training configuration"""
 
     # Model settings
-    model_name: str = "ibm-granite/granite-3.0-2b-instruct"  # Smaller model for CPU
+    model_name: str = "ibm-granite/granite-4.0-h-tiny"  # Granite 4H Tiny MoE (7B total, 1B active)
     use_4bit: bool = False  # DON'T use 4-bit during training (better quality for Q4_K_M export)
 
     # LoRA settings
